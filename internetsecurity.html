@@ -1,51 +1,120 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Internet Security</title>
+
+
+<title>Object oriented vs. structured programming</title>
 <style>
   body{
     background-image:url(https://fondosmil.com/fondo/10792.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  margin: 0;
-  height: 100vh;}
-	body { cursor:crosshair;
+} 
+body{
+  background-color: lightgrey;
+  font-family: sans-serif;
 }
-	  #menu{
+
+.container{
+position: absolute;
+  margin: auto;
+  background-color: blue;
+  width: 800px;
+  left:50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background-color:blue;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  background-color:blue;
+}
+
+.menu li a{
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+ #menu11{
 			      background-color:blue;
 			 }
-			 #menu ul{
+			 #menu11 ul{
 			      list-style: none;
 				  margin:0;
 				  padding:0;
 			 
 			 }
-			 #menu ul li {
+			 #menu11 ul li {
 			      display:inline-block;
-				  font-size:14px;
+				  font-size:13.5px;
 				  font-weight:900;
 			 }
-			 #menu ul li a{
+			 #menu11 ul li a{
 			    color: black;
 				display:block;
 				padding:20px 80px;
 				text-decoration:none;
 			 }
-			 #menu ul li a:hover{
+			 #menu11 ul li a:hover{
 			        background-color:#5858FA;
 			 }
-
+	                 em {
+	                     color:red;
+	                     }
 	
-
 </style>
 </head>
-
-
-
-
 <body>
-
-      <div id="menu">
+ <div id="menu11">
             <ul>
                 <li><a href="https://mariofrancoalczr.github.io/">INDEX</a></li>
                 <li><a href="https://mariofrancoalczr.github.io/accesibilitystandars">ACCESIBILITY STANDARS</a></li>			
@@ -54,212 +123,203 @@
                 <li><a href="https://mariofrancoalczr.github.io/objectoriented">OBJECT ORIENTED</a></li>			
 			</ul>
 	 </div>
-   
+<div class="container">
+  
+  <ul class="slider">
+    <li id="slide1">
+      <h1 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:20px; border:6px solid #000000	; margin-top:100px; margin-bottom:100px; text-align:center; font-size:30px;id=info;">INTERNET SECURITY</h1>
+    </li>
+    <li id="slide2">
+      <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">PASSIVE SECURITY THREATS:</h1>
+      <p  style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">A Passive attack attempts to learn or make use of information from the system but does not affect system resources. Passive Attacks are in the nature of eavesdropping on or monitoring of transmission. The goal of the opponent is to obtain information is being transmitted. There are some different types of passive attacks:</p>
+    </li>
+    <li id="slide3">
+      <p style="background: blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:16px;">The release of message content:
+	  <br>Telephonic conversation, an electronic mail message or a transferred file may contain sensitive or confidential information. We would like to prevent an opponent from learning the contents of these transmissions.</br></p>
+	  <p style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:16px;">Traffic analysis:
+      <br>Suppose that we had a way of masking (encryption) of information, so that the attacker even if captured the message could not extract any information from the message. The opponent could determine the location and identity of communicating host and could observe the frequency and length of messages being exchanged. This information might be useful in guessing the nature of the communication that was taking place.</br></p>
+	</li>
+	<li id="slide4">
+     <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">ACTIVE SECURITY THREATS:</h1>
+     <p  style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">An Active attack attempts to alter system resources or effect their operations. Active attack involve some modification of the data stream or creation of false statement. There are some different types of active attacks:</p>
+    </li>
+	 <li id="slide5">
+      <p style="background: blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">Masquerade:
+	  <br>Masquerade attack takes place when one entity pretends to be different entity. A Masquerade attack involves one of the other form of active attacks.</br></p>
+	  <p style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">Modification of messages:
+      <br>It means that some portion of a message is altered or that message is delayed or reordered to produce an unauthorised effect. For example, a message meaning “Allow JOHN to read confidential file X” is modified as “Allow Smith to read confidential file X”.</br></p> 
+    <li id="slide6">
+      <p style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:0px; margin-bottom:20px; text-align:center; font-size:13px;">Repudiation:
+      <br>This attack is done by either sender or receiver. The sender or receiver can deny later that he/she has send or receive a message. For example, customer ask his Bank “To transfer an amount to someone” and later on the sender(customer) deny that he had made such a request. This is repudiation.</br></p>
+      <p style="background: blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:13px;">Replay:
+      <br>It involves the passive capture of a message and its subsequent the transmission to produce an authorized effect.</br></p>
+	  <p style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:13px;">Denial of Service:
+      <br>It prevents normal use of communication facilities. This attack may have a specific target. For example, an entity may suppress all messages directed to a particular destination. Another form of service denial is the disruption of an entire network wither by disabling the network or by overloading it by messages so as to degrade performance.</br></p>
+    </li>
+	<li id="slide7">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">MALWARE</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:15px;">Malware (a portmanteau for malicious software) is any software intentionally designed to cause damage to a computer, server, client, or computer network(by contrast, software that causes unintentional harm due to some deficiency is typically described as a software bug). Programs are also considered malware if they secretly act against the interests of the computer user. For example, at one point Sony music Compact discs silently installed a rootkit on purchasers' computers with the intention of preventing illicit copying, but which also reported on users' listening habits, and unintentionally created extra security vulnerabilities. A range of antivirus software, firewalls and other strategies are used to help protect against the introduction of malware, to help detect it if it is already present, and to recover from malware-associated malicious activity and attacks. </h1>
+	</li>
+	<li id="slide8">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Worms</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:14.5px;">A computer worm is a standalone malware computer program that replicates itself in order to spread to other computers. It often uses a computer network to spread itself, relying on security failures on the target computer to access it. It will use this machine as a host to scan and infect other computers. When these new worm-invaded computers are controlled, the worm will continue  to scan and infect other computers using these computers as hosts, and this behaviour will continue.Computer worms use recursive methods to copy themselves without host programs and distribute themselves based on the law of exponential growth, thus controlling and infecting more and more computers in a short time. Worms almost always cause at least some harm to the network, even if only by consuming bandwidth, whereas viruses almost always corrupt or modify files on a targeted computer. Many worms are designed only to spread, and do not attempt to change the systems they pass through.</h1>
+	</li>
+	<li id="slide9">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Trojan horse</h1>
+      <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:13px;">In computing, a Trojan horse[a] (or simply trojan)[b] is any malware which misleads users of its true intent. The term is derived from the Ancient Greek story of the deceptive Trojan Horse that led to the fall of the city of Troy. Trojans are generally spread by some form of social engineering, for example where a user is duped into executing an email attachment disguised to appear not suspicious, (e.g., a routine form to be filled in), or by clicking on some fake advertisement on social media or anywhere else. Although their payload can be anything, many modern forms act as a backdoor, contacting a controller which can then have unauthorized access to the affected computer.Trojans may allow an attacker to access users' personal information such as banking information, passwords, or personal identity. It can also delete a user's files or infect other devices connected to the network. Ransomware attacks are often carried out using a trojan. Unlike computer viruses, worms, and rogue security software, trojans generally do not attempt to inject themselves into other files or otherwise propagate themselves.</h1>
+    </li>
+	<li id="slide10">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Virus</h1>
+      <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:16.5px;">A computer virus is a type of computer program that, when executed, replicates itself by modifying other computer programs and inserting its own code. If this replication succeeds, the affected areas are then said to be "infected" with a computer virus. Computer viruses generally require a host program. The virus writes its own code into the host program. When the program runs, the written virus program is executed first, causing infection and damage. A computer worm does not need a host program, as it is an independent program or code chunk. Therefore, it is not restricted by the host program, but can run independently and actively carry out attacks. Computer viruses cause billions of dollars' worth of economic damage each year.</h1>
+	</li>
+	<li id="slide11">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Spyware</h1>
+      <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:17px;">Spyware describes software with malicious behavior that aims to gather information about a person or organization and send such information to another entity in a way that harms the user; for example by violating their privacy or endangering their device's security. This behavior may be present in malware as well as in legitimate software. Websites may engage in spyware behaviors like web tracking. Hardware devices may also be affected. Spyware is frequently associated with advertising and involves many of the same issues. Because these behaviors are so common, and can have non-harmful uses, providing a precise definition of spyware is a difficult task.</h1>
+	</li>
+	<li id="slide12">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">SOFTWARE AND HARDWARE TO PROTECT NETWORK</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:15px;">Network security is any practice or tool designed and implemented to secure a network and its data. It includes software, hardware, and cloud solutions. Effective network security tools stop a wide range of cyberattacks, and prevent attacks spreading throughout the network in case of a data breach. In today’s cyber environment, every organization must implement network security processes and solutions to maintain the uptime of their online resources. All network security solutions are implemented in accordance with the core principles of network security.<p>
+    </li>
+	<li id="slide13">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Application Security</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:19px;">Application security ensures that the software used throughout the network is secure. Application security is ensured by limiting the amount of software that is used, ensuring that software is kept up-to-date with the latest security patches and that applications developed for use in the network are appropriately hardened against potential exploits. 
+	</li>
+	<li id="slide14">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Behavioral Analytics</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">Behavioral analytics is an advanced threat detection method that compares historical network activity data to current events in an effort to detect anomalous behavior. An example of this would be if a user typically uses a given endpoint device to access a specific database somewhere between 3-4 times per day on average, an instance where that user instead uses a new endpoint device to access a different database several times would be flagged for review.
+    </li>
+	<li id="slide15">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">DDoS Prevention</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:15px;">Distributed denial-of-service (DDoS) attacks attempt to crash the network by overloading it with a large influx of incoming connection requests. DDoS prevention solutions analyze incoming requests to identify and filter out illegitimate traffic in an effort to maintain the network’s accessibility for legitimate connections. DDoS attacks are either carried out through a distributed network of attackers that execute scripts to send a large volume of incoming requests to the network or through a widespread series of devices that have been compromised and converted into an orchestrated system known as a botnet. 
+    </li>
+	<li id="slide16">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Data Loss Prevention (DLP)</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:17px;">Data loss prevention (DLP) tools protect the data inside a network by preventing users from sharing sensitive or valuable information outside of the network and ensuring that data is not lost or misused. This can be accomplished by analyzing files that are sent via email, file transfers, and instant messages for data that is considered to be sensitive, such as personally identifiable information (PII). 
+    </li>
+	<li id="slide17">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Email Security</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:15px;">Email security measures protect networks from phishing attacks that attempt to trick users into clicking links to malicious websites or downloading seemingly innocent attachments that introduce malware into the network. Email security tools proactively fight phishing by identifying suspicious emails and filtering them out before they reach the user’s inbox. According to the 2019 Verizon Data Breach Investigations Report (DBIR), 94% of malware was discovered to have been delivered via email and 32% of data breaches involved phishing attacks. Email security tools complement anti-phishing training by reducing the volume of malicious emails that pass through the network and into the inboxes of users.
+    </li>
+	<li id="slide18">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Endpoint Security</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:17px;">Endpoint security protects networks by ensuring that the devices that will be connected to the network are secured against potential threats. Endpoint security is achieved alongside network security by combining several other network security tools such as network access control, application security, and network monitoring. An endpoint device is any piece of hardware that is connected to a local area network (LAN) or wide area network (WAN), such as workstations, laptops, smartphones, printers, and mobile kiosks. 
+	</li>
+	<li id="slide19">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Firewalls</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:20px;">Firewalls are hardware appliances and software programs that act as a barrier between incoming traffic and the network. The firewall compares data packets that are sent over the network to predefined policies and rules that indicate whether or not the data should be permitted into the network. 
+    </li>
+	<li id="slide20">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Mobile Device Security</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:17px;">Mobile device security centers around limiting the access that mobile devices have to the network and ensuring that the security vulnerabilities of mobile devices that are permitted on the network are monitored and managed. Mobile device security measures include mobile device management (MDM) solutions that allow administrators to segment sensitive data on mobile devices, enforce data encryption, determine the applications that are permitted to be installed, locate lost or stolen devices, and remotely wipe sensitive data.
+    </li>
+	<li id="slide21">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Network Monitoring & Detection Systems</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:12.15px;">Network monitoring & detection systems include a wide variety of applications that are designed to monitor incoming and outgoing network traffic and respond to anomalous or malicious network activity.  Examples of network monitoring & detection systems:<br>Intrusion Prevention Systems (IPS) scan network traffic for suspicious activity such as policy violations in an effort to automatically block intrusion attempts.</br><br>Intrusion Detection Systems (IDS) work similarly to IPS, with an emphasis on monitoring network packets and flagging suspicious activity for review.</br><br>Security Information And Event Management (SIEM) provide a detailed overview of network events using a combination of host-based and network-based intrusion detection methods. SIEM systems provide administrators with valuable log data for investigating security incidents and flagging suspicious behavior.</br>
+    </li>
+	<li id="slide22">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Network Segmentation</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:19px;">Network segmentation is a common network security practice for reducing the ease of which network security threats can spread. Network segmentation involves classifying a larger network into multiple subnetworks, with each subnetwork being managed with its own unique access controls. Each subnetwork acts as its own unique network to improve monitoring capabilities, boost network performance, and enhance security.
+    </li>
+	<li id="slide23">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Virtual Private Networks (VPN)</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:19px;">Virtual private networks provide secure remote access from a given endpoint into a network. A VPN encrypts all network traffic that goes through it to prevent the unauthorized analysis of data sent to and from the network. It is often used by off-site workers that need a secure connection to their company’s network, allowing them to access data and applications that are necessary for their role.
+    </li>
+	<li id="slide24">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Web Security</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:14px;">Web security protects networks by proactively protecting endpoint devices against web-based threats. Web security technologies such as a web filter will use a database of known malicious or vulnerable websites to maintain a blacklist, block commonly exploited network ports, and prevent users from engaging in high-risk activities on the internet.<br> Web filtering solutions can be configured to only allow pre-authorized domains that are on the web filter’s whitelist. When a whitelist is used the web filter will block access to all websites that are not on the whitelist.</br><br>Web security products may also include capabilities for analyzing connection requests to a website and determining if the website meets the minimum security requirements of the network before allowing users to access it.</br>
+	</li>
+	<li id="slide25">
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Wireless Security</h1>
+	  <h1 style="background:	blue; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:17px;">Wireless security measures protect the network against vulnerabilities that are unique to wireless connections. Wi-Fi networks openly broadcast connections to nearby devices, creating added opportunities for nearby threat actors to attempt to access the network. Wireless security is enhanced through methods such as encrypting data passed over wireless networks, filtering MAC addresses to restrict access, and privatizing the network SSID to avoid broadcasting the name of the network.
+    </li>
+	<li id="slide26">
+	</li>
+  </ul>
 	
+  
+  <ul class="menu">
+    <li>
+      <a href="#slide1">1</a>
+    </li>
+    <li>
+      <a href="#slide2">2</a>
+    </li>
+     <li>
+      <a href="#slide3">3</a>
+    </li>
+	<li>
+      <a href="#slide4">4</a>
+    </li>
+	<li>
+      <a href="#slide5">5</a>
+    </li>
+	<li>
+      <a href="#slide6">6</a>
+    </li>
+	<li>
+      <a href="#slide7">7</a>
+    </li>
+	<li>
+      <a href="#slide8">8</a>
+    </li>
+	<li>
+      <a href="#slide9">9</a>
+    </li>
+	<li>
+      <a href="#slide10">10</a>
+    </li>
+	<li>
+      <a href="#slide11">11</a>
+    </li>
+	<li>
+      <a href="#slide12">12</a>
+    </li>
+	<li>
+      <a href="#slide13">13</a>
+    </li>
+	<li>
+      <a href="#slide14">14</a>
+    </li>
+	<li>
+      <a href="#slide15">15</a>
+    </li>
+	<li>
+      <a href="#slide16">16</a>
+    </li>
+	<li>
+      <a href="#slide17">17</a>
+    </li>
+	<li>
+      <a href="#slide18">18</a>
+    </li>
+	<li>
+      <a href="#slide19">19</a>
+    </li>
+	<li>
+      <a href="#slide20">20</a>
+    </li>
+	<li>
+      <a href="#slide21">21</a>
+    </li>
+	<li>
+      <a href="#slide22">22</a>
+    </li>
+	<li>
+      <a href="#slide23">23</a>
+    </li>
+	<li>
+      <a href="#slide24">24</a>
+    </li>
+	<li>
+      <a href="#slide25">25</a>
+    </li>
+	<li>
+      <a href="#slide26">26</a>
+    </li>
 	
-	
-	
-	
-	<h1 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:30px;">INTERNET SECURITY</h1>
-	
-	
-	
-<h2 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Passive security threats:</h2>
-<p  style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">A Passive attack attempts to learn or make use of information from the system but does not affect system resources. Passive Attacks are in the nature of eavesdropping on or monitoring of transmission. The goal of the opponent is to obtain information is being transmitted. There are some different types of passive attacks:</p>
-<ul>
-     <li style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">The release of message content:
-Telephonic conversation, an electronic mail message or a transferred file may contain sensitive or confidential information. We would like to prevent an opponent from learning the contents of these transmissions.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/new1-1.png" alt ="The release of message content" width="400" height="200"></li>
-	 <li style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Traffic analysis:
-Suppose that we had a way of masking (encryption) of information, so that the attacker even if captured the message could not extract any information from the message.
-The opponent could determine the location and identity of communicating host and could observe the frequency and length of messages being exchanged. This information might be useful in guessing the nature of the communication that was taking place.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/new2-2.png" alt ="Traffic analysis" width="400" height="200"></li>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">>Passive security threats that refers to eavesdropping or data monitoring where the attackers just monitor the information that are being relayed between sender and receiver.</p>
-<h3>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
-<h2 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Active security threats:</h2>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;"> An Active attack attempts to alter system resources or effect their operations. Active attack involve some modification of the data stream or creation of false statement. There are some different types of active attacks:</p>
-<ul>
-      <li style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">Masquerade:
-Masquerade attack takes place when one entity pretends to be different entity. A Masquerade attack involves one of the other form of active attacks.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/new3-1.png" alt ="Masquerade" width="400" height="200"></li>
-      <li style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:20px;">Modification of messages:
-It means that some portion of a message is altered or that message is delayed or reordered to produce an unauthorised effect. For example, a message meaning “Allow JOHN to read confidential file X” is modified as “Allow Smith to read confidential file X”.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/new4.png" alt ="Modification of messages" width="400" height="200"></li>
-      <li style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Repudiation:
-This attack is done by either sender or receiver. The sender or receiver can deny later that he/she has send or receive a message. For example, customer ask his Bank “To transfer an amount to someone” and later on the sender(customer) deny that he had made such a request. This is repudiation.</li>
-      <li style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Replay:
-It involves the passive capture of a message and its subsequent the transmission to produce an authorized effect.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/new5.png" alt ="Replay" width="400" height="200"></li>
-      <li style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:25px;">Denial of Service:
-It prevents normal use of communication facilities. This attack may have a specific target. For example, an entity may suppress all messages directed to a particular destination. Another form of service denial is the disruption of an entire network wither by disabling the network or by overloading it by messages so as to degrade performance.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/new6.png" alt ="Denial of Service" width="400" height="200"></li>
-</ul>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Active security threats refer to Man-In-The-Middle attack, Denial of service attacks where attacker exploits the information and may change the contents.</p>
-<h3>-------------------------------------------------------------------------------------------------------------------------------------</h3>
-<h2 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">MALWARE</h2>
-<h2 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:20px;">Malware (a portmanteau for malicious software) is any software intentionally designed to cause damage to a computer, server, client, or computer network(by contrast, software that causes unintentional harm due to some deficiency is typically described as a software bug).
-Programs are also considered malware if they secretly act against the interests of the computer user. For example, at one point Sony music Compact discs silently installed a rootkit on purchasers' computers with the intention of preventing illicit copying, but which also reported on users' listening habits, and unintentionally created extra security vulnerabilities.
-A range of antivirus software, firewalls and other strategies are used to help protect against the introduction of malware, to help detect it if it is already present, and to recover from malware-associated malicious activity and attacks.
-</p>
-<h3 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Worms</h3>
-<p  style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:15px;">A computer worm is a standalone malware computer program that replicates itself in order to spread to other computers. It often uses a computer network to spread itself, relying on security failures on the target computer to access it. It will use this machine as a host to scan and infect other computers. When these new worm-invaded computers are controlled, the worm will continue 
-to scan and infect other computers using these computers as hosts, and this behaviour will continue.Computer worms use recursive methods to copy themselves without host programs and distribute themselves based on the law of exponential growth, thus controlling and infecting more and more computers in a short time. Worms almost always cause at least some harm to the network, even if only by consuming bandwidth, whereas viruses almost always corrupt or modify files on a targeted computer.
-
-Many worms are designed only to spread, and do not attempt to change the systems they pass through.
-<img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/11787250/virus-del-gusano-del-ordenador-19140557.jpg" alt ="Worms" width="400" height="200"></p>
-<h3 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Trojan horse</h3>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:20px;"> In computing, a Trojan horse[a] (or simply trojan)[b] is any malware which misleads users of its true intent. The term is derived from the Ancient Greek story of the deceptive Trojan Horse that led to the fall of the city of Troy.
-
-Trojans are generally spread by some form of social engineering, for example where a user is duped into executing an email attachment disguised to appear not suspicious, (e.g., a routine form to be filled in), or by clicking on some fake advertisement on social media or anywhere else. Although their payload can be anything, many modern forms act as a backdoor, contacting a controller which can then have unauthorized access to the affected computer.Trojans may allow an attacker to access users' personal information such as banking information, passwords, or personal identity. It can also delete a user's files or infect other devices connected to the network. Ransomware attacks are often carried out using a trojan.
-Unlike computer viruses, worms, and rogue security software, trojans generally do not attempt to inject themselves into other files or otherwise propagate themselves.
-
-
-<img src="https://enterprise.comodo.com/images/what-is-a-computer-trojan.png" alt ="Trojan" width="400" height="200"></p>
-<h3 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Virus</h3>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:17.5px;"> A computer virus is a type of computer program that, when executed, replicates itself by modifying other computer programs and inserting its own code. If this replication succeeds, the affected areas are then said to be "infected" with a computer virus.
-
-Computer viruses generally require a host program. The virus writes its own code into the host program. When the program runs, the written virus program is executed first, causing infection and damage. A computer worm does not need a host program, as it is an independent program or code chunk. Therefore, it is not restricted by the host program, but can run independently and actively carry out attacks.
-Computer viruses cause billions of dollars' worth of economic damage each year.
-
-<img src="https://www.voipshield.com/wp-content/uploads/2017/10/gg1-800x445.jpg" alt ="Virus" width="400" height="200"></p>
-
-
-<h3 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Spyware</h3>
-<p  style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:20px;">Spyware describes software with malicious behavior that aims to gather information about a person or organization and send such information to another entity in a way that harms the user; for example by violating their privacy or endangering their device's security. This behavior may be present in malware as well as in legitimate software. Websites may engage in spyware behaviors like web tracking. Hardware devices may also be affected.
- Spyware is frequently associated with advertising and involves many of the same issues. Because these behaviors are so common, and can have non-harmful uses, providing a precise definition of spyware is a difficult task
-<img src="https://qph.fs.quoracdn.net/main-qimg-811734b33769750be8c9d232e95ee5aa" alt ="Spyware" width="400" height="200"></p>
-<h3>--------------------------------------------------------------------------------------------------------------------------------------------</h3>
-<h2 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">SOFTWARE AND HARDWARE TO PROTECT NETWORK</h2>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Network security is any practice or tool designed and implemented to secure a network and its data. It includes software, hardware, and cloud solutions. Effective network security tools stop a wide range of cyberattacks, and prevent attacks spreading throughout the network in case of a data breach.
-
-In today’s cyber environment, every organization must implement network security processes and solutions to maintain the uptime of their online resources. All network security solutions are implemented in accordance with the core principles of network security.</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Application Security</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Application security ensures that the software used throughout the network is secure. Application security is ensured by limiting the amount of software that is used, ensuring that software is kept up-to-date with the latest security patches and that applications developed for use in the network are appropriately hardened against potential exploits.
-<img src="https://phoenixnap.com/blog/wp-content/uploads/2020/02/Cyber-Security-Risks.png" alt ="Spyware" width="400" height="200">
-</p>
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Behavioral Analytics</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Behavioral analytics is an advanced threat detection method that compares historical network activity data to current events in an effort to detect anomalous behavior. An example of this would be if a user typically uses a given endpoint device to access a specific database somewhere between 3-4 times per day on average, an instance where that user instead uses a new endpoint device to access a different database several times would be flagged for review.
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">DDoS Prevention</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Distributed denial-of-service (DDoS) attacks attempt to crash the network by overloading it with a large influx of incoming connection requests. DDoS prevention solutions analyze incoming requests to identify and filter out illegitimate traffic in an effort to maintain the network’s accessibility for legitimate connections.
-
-DDoS attacks are either carried out through a distributed network of attackers that execute scripts to send a large volume of incoming requests to the network or through a widespread series of devices that have been compromised and converted into an orchestrated system known as a botnet. 
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Application Security</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Application security ensures that the software used throughout the network is secure. Application security is ensured by limiting the amount of software that is used, ensuring that software is kept up-to-date with the latest security patches and that applications developed for use in the network are appropriately hardened against potential exploits.
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Data Loss Prevention (DLP)
-</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Data loss prevention (DLP) tools protect the data inside a network by preventing users from sharing sensitive or valuable information outside of the network and ensuring that data is not lost or misused. This can be accomplished by analyzing files that are sent via email, file transfers, and instant messages for data that is considered to be sensitive, such as personally identifiable information (PII). 
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Email Security</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Email security measures protect networks from phishing attacks that attempt to trick users into clicking links to malicious websites or downloading seemingly innocent attachments that introduce malware into the network. Email security tools proactively fight phishing by identifying suspicious emails and filtering them out before they reach the user’s inbox.
-
-According to the 2019 Verizon Data Breach Investigations Report (DBIR), 94% of malware was discovered to have been delivered via email and 32% of data breaches involved phishing attacks. Email security tools complement anti-phishing training by reducing the volume of malicious emails that pass through the network and into the inboxes of users.
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Endpoint Security
-</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Endpoint security protects networks by ensuring that the devices that will be connected to the network are secured against potential threats. Endpoint security is achieved alongside network security by combining several other network security tools such as network access control, application security, and network monitoring.
-
-An endpoint device is any piece of hardware that is connected to a local area network (LAN) or wide area network (WAN), such as workstations, laptops, smartphones, printers, and mobile kiosks. 
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Firewalls</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Firewalls are hardware appliances and software programs that act as a barrier between incoming traffic and the network. The firewall compares data packets that are sent over the network to predefined policies and rules that indicate whether or not the data should be permitted into the network. 
-
-
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Mobile Device Security
-</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Mobile device security centers around limiting the access that mobile devices have to the network and ensuring that the security vulnerabilities of mobile devices that are permitted on the network are monitored and managed.
-
-Mobile device security measures include mobile device management (MDM) solutions that allow administrators to segment sensitive data on mobile devices, enforce data encryption, determine the applications that are permitted to be installed, locate lost or stolen devices, and remotely wipe sensitive data.
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Network Monitoring & Detection Systems</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Network monitoring & detection systems include a wide variety of applications that are designed to monitor incoming and outgoing network traffic and respond to anomalous or malicious network activity. 
-
-Examples of network monitoring & detection systems:
-
-Intrusion Prevention Systems (IPS) scan network traffic for suspicious activity such as policy violations in an effort to automatically block intrusion attempts.
-Intrusion Detection Systems (IDS) work similarly to IPS, with an emphasis on monitoring network packets and flagging suspicious activity for review.
-Security Information And Event Management (SIEM) provide a detailed overview of network events using a combination of host-based and network-based intrusion detection methods. SIEM systems provide administrators with valuable log data for investigating security incidents and flagging suspicious behavior.
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Network Segmentation
-</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Network segmentation is a common network security practice for reducing the ease of which network security threats can spread. Network segmentation involves classifying a larger network into multiple subnetworks, with each subnetwork being managed with its own unique access controls. Each subnetwork acts as its own unique network to improve monitoring capabilities, boost network performance, and enhance security.
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Virtual Private Networks (VPN)
-</p>
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Virtual private networks provide secure remote access from a given endpoint into a network. A VPN encrypts all network traffic that goes through it to prevent the unauthorized analysis of data sent to and from the network. It is often used by off-site workers that need a secure connection to their company’s network, allowing them to access data and applications that are necessary for their role.
-
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Web Security
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Web security protects networks by proactively protecting endpoint devices against web-based threats. Web security technologies such as a web filter will use a database of known malicious or vulnerable websites to maintain a blacklist, block commonly exploited network ports, and prevent users from engaging in high-risk activities on the internet.
-
-Web filtering solutions can be configured to only allow pre-authorized domains that are on the web filter’s whitelist. When a whitelist is used the web filter will block access to all websites that are not on the whitelist. 
-
-Web security products may also include capabilities for analyzing connection requests to a website and determining if the website meets the minimum security requirements of the network before allowing users to access it.
-</p>
-
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:22px;">Wireless Security
-
-</p>
-
-
-<p style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:18px;">
-Wireless security measures protect the network against vulnerabilities that are unique to wireless connections. Wi-Fi networks openly broadcast connections to nearby devices, creating added opportunities for nearby threat actors to attempt to access the network. Wireless security is enhanced through methods such as encrypting data passed over wireless networks, filtering MAC addresses to restrict access, and privatizing the network SSID to avoid broadcasting the name of the network.
-
-
-</p>
-
-
-
-
-
-
-
-
-
+  </ul>
+  
+</div>
 </body>
 
 
