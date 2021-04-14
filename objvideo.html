@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<title>Object oriented vs. structured programming</title>
+<style>
+  body{
+    background-image:url(https://fondosmil.com/fondo/10792.jpg);
+} 
+body{
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
+
+.container{
+position: absolute;
+  margin: auto;
+  background-color: blue;
+  width: 800px;
+  left:50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background-color:blue;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  background-color:blue;
+}
+
+.menu li a{
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+ #menu11{
+			      background-color:blue;
+			 }
+			 #menu11 ul{
+			      list-style: none;
+				  margin:0;
+				  padding:0;
+			 
+			 }
+			 #menu11 ul li {
+			      display:inline-block;
+				  font-size:13.5px;
+				  font-weight:900;
+			 }
+			 #menu11 ul li a{
+			    color: black;
+				display:block;
+				padding:20px 80px;
+				text-decoration:none;
+			 }
+			 #menu11 ul li a:hover{
+			        background-color:#5858FA;
+			 }
+	                 em {
+	                     color:red;
+	                     }
+	
+</style>
+</head>
+<body>
+ 
+<div class="container">
+  
+  <ul class="slider">
+    
+	<li id="slide1">
+	  <iframe width="800" height="315" src="https://www.youtube.com/embed/xoL6WvCARJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</li>
+	</ul>
+  <ul class="menu">
+    <li>
+      <a href="#slide1">1</a>
+    </li>
+	</ul>
+	    <h1 style="background:	#2E2EFE; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:5px; margin-bottom:5px; text-align:center; font-size:30px;id=info;"><a href=·https://mariofrancoalczr.github.io/objectoriented">Go Back to the INFORMATION</a></h1>
+  
+  
+</div>
+</body>
+
+
+</html>
