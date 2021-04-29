@@ -1,45 +1,121 @@
+  
 <!DOCTYPE HTML>
-
 <html>
 <head>
-<title>Index Project</title>
+
+
+<title>Object oriented vs. structured programming</title>
 <style>
   body{
     background-image:url(https://fondosmil.com/fondo/10792.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  margin: 0;
-  height: 100vh;}
-	body { cursor:crosshair;
+} 
+body{
+  background-color: lightgrey;
+  font-family: sans-serif;
 }
-	
-   #menu{
-			      background-color:white;
+
+.container{
+position: absolute;
+  margin: auto;
+  background-color: #848484;
+  width: 800px;
+  left:50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background-color:#848484;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  background-color:#848484;
+}
+
+.menu li a{
+  display: inline-block;
+  color: Black;
+  text-decoration: none;
+  background-color: White;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+ #menu11{
+			      background-color:White;
 			 }
-			 #menu ul{
+			 #menu11 ul{
 			      list-style: none;
 				  margin:0;
 				  padding:0;
 			 
 			 }
-			 #menu ul li {
+			 #menu11 ul li {
 			      display:inline-block;
-				  font-size:14px;
+				  font-size:13.5px;
 				  font-weight:900;
 			 }
-			 #menu ul li a{
+			 #menu11 ul li a{
 			    color: black;
 				display:block;
-				padding:20px 80px;
+				padding:20px 55px;
 				text-decoration:none;
 			 }
-			 #menu ul li a:hover{
+			 #menu11 ul li a:hover{
 			        background-color:#5858FA;
-			 }	
+			 }
+	                 em {
+	                     color:red;
+	                     }
+	
 </style>
 </head>
 <body>
- <div id="menu">
+ <div id="menu11">
             <ul>
                 <li><a href="https://mariofrancoalczr.github.io/indexx">INDEX</a></li>
                 <li><a href="https://mariofrancoalczr.github.io/accesibilitystandars">ACCESIBILITY STANDARS</a></li>			
@@ -48,7 +124,57 @@
                 <li><a href="https://mariofrancoalczr.github.io/objectoriented">OBJECT ORIENTED</a></li>			
 			</ul>
 	 </div>
- 
- <h1 style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:20px; margin-bottom:20px; text-align:center; font-size:100px;"><marquee >COMING SOON</marquee ></h1>
-
+<div class="container">
+  
+  <ul class="slider">
+    <li id="slide1">
+      <h1 style="background:	#FFFFFF; color:Black; font-weight:bold; padding:20px; border:6px solid #000000	; margin-top:100px; margin-bottom:100px; text-align:center; font-size:30px;id=info;">ACCESIBILITY STANDARS</h1>
+    </li>
+    <li id="slide2">
+      <h1 style="background:	#FFFFFF; color:Black; font-weight:bold; padding:20px; border:6px solid #000000	; margin-top:5px; margin-bottom:5px; text-align:center; font-size:30px;" id="info">Web Content Accessibility Guidelines</h1>
+	  <p  style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:15px; margin-bottom:15px; text-align:center; font-size:16px;" id="info">In 1999 the Web Accessibility Initiative, a project by the World Wide Web .Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0. On 11 December 2008, the WAI released the WCAG 2.0 as a Recommendation. WCAG 2.0 aims to be up to date and more technology neutral. Though web designers can choose either standard to follow, the WCAG 2.0 have been widely accepted as the definitive guidelines on how to create accessible websites. Governments are steadily adopting the WCAG 2.0 as the accessibility standard for their own websites.
+    </li>
+	<li id="slide3">
+      <h1 style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:5px; margin-bottom:5px; text-align:center; font-size:30px;"id="info">W3C</h1>
+	  <p  style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:15px; margin-bottom:15px; text-align:center; font-size:15.5px;"id="info">The Initiative for Web Accessibility, Web Accessibility Initiative (WAI) in English, is an initiative of the World Wide Web Consortium (W3C) that aims to facilitate access for people with disabilities, developing accessibility guidelines, improving tools for evaluation and repair of Web accessibility, carrying out educational and awareness-raising work in relation to the importance of accessible design of Web pages, and opening new fields in accessibility through research in this area. The WAI works with organizations around the world to develop strategies, guidelines, and create resources and tools that help make the Web accessible to people with disabilities.
+	</li>
+	<li id="slide4">
+      <h1 style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:5px; margin-bottom:5px; text-align:center; font-size:30px;"id="info">WCAG 1.0</h1>
+	  <p  style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:15px; margin-bottom:15px; text-align:center; font-size:15.5px;"id="info">Web Content Accessibility Guidelines 1.0 (WCAG 1.0) is a May 5, 1999 W3C recommendation that explains how to make web content accessible to people with disabilities. <br>So far, WCAG 1.0 is recognized as the de facto international standard for web accessibility. It has even become the de jure standard in many countries, as in the case of Spain. Unfortunately, WCAG 1.0 can be difficult for the beginner to understand and may seem overwhelming and out of hand due to the breadth of topics it covers. To avoid this situation, the W3C provides the Curriculum for Web Content Accessibility Guidelines 1.0, a tutorial full of explanations and examples.</br>
+	</li>
+	<li id="slide5">
+      <h1 style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:5px; margin-bottom:5px; text-align:center; font-size:30px;"id="info">WAI</h1>
+	  <p  style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:15px; margin-bottom:15px; text-align:center; font-size:15px;"id="info">The Web Accessibility Initiative (WAI) or Web Accessibility Initiative is a branch of the World Wide Web Consortium that ensures the accessibility of the Web. <br>Publish the Web Content Accessibility Guides. The general idea of the WAI is to create a set of clear rules.</br><br> The degree of accessibility is established in levels called A, AA, and AAA, corresponding respectively to minimum criteria of accessibility, extended, and maximum accessibility. Technically, accessibility is implemented through guidelines of structural logic of documents, self-explanatory content and additional semantics, with the intention of allowing the widest possible audience of users with different levels of technological endowment and sensory capacity, to access the information. that is intended to represent and transmit.</br>
+    </li>
+	<li id="slide6">
+      <p  style="background:	#FFFFFF; color:Black; font-weight:bold; padding:15px; border:6px solid #000000	; margin-top:100px; margin-bottom:100px; text-align:center; font-size:15px;"id="info"><a href="https://mariofrancoalczr.github.io/map">INTERESTING PLACE TO VISIT RELATED WITH ACCESIBILITY STANDARS</a></p>
+	</li>
+	
+  </ul>
+  
+  <ul class="menu">
+    <li>
+      <a href="#slide1">1</a>
+    </li>
+    <li>
+      <a href="#slide2">2</a>
+    </li>
+     <li>
+      <a href="#slide3">3</a>
+    </li>
+	<li>
+      <a href="#slide4">4</a>
+    </li>
+	<li>
+      <a href="#slide5">5</a>
+    </li>
+	<li>
+      <a href="#slide6">6</a>
+    </li>
+  </ul>
+  
+</div>
 </body>
+
+
+</html>
